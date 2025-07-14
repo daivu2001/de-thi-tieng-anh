@@ -2,7 +2,7 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <title>Bài tập A2 KEY</title>
+  <title>Bài tập trắc nghiệm A2 KEY</title>
   <style>
     html, body {
       margin: 0;
@@ -18,60 +18,79 @@
       width: 100vw;
     }
 
-    .left-frame, .right-frame {
-      height: 100%;
+    .left, .right {
       overflow-y: auto;
-    }
-
-    .left-frame {
-      flex: 2;
-      border-right: 2px solid #ccc;
-    }
-
-    .right-frame {
-      flex: 1;
-    }
-
-    iframe {
-      width: 100%;
       height: 100%;
-      border: none;
+      padding: 20px;
     }
 
-    footer {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      background: #f5f5f5;
-      text-align: center;
-      padding: 5px;
-      font-size: 13px;
+    .left {
+      flex: 2;
+      background-color: #fefefe;
+      border-right: 1px solid #ccc;
+    }
+
+    .right {
+      flex: 1;
+      background-color: #f9f9f9;
+    }
+
+    h2 {
+      margin-bottom: 10px;
       color: #333;
+    }
+
+    .question {
+      margin-bottom: 20px;
+    }
+
+    .answer input {
+      margin-right: 5px;
     }
   </style>
 </head>
 <body>
 
 <div class="container">
-  <!-- Google Site bên trái -->
-  <div class="left-frame">
-    <iframe src="https://sites.google.com/view/baitap-a2-key3/home" title="Google Site"></iframe>
+  <!-- Bên trái: đề bài -->
+  <div class="left">
+    <h2>📝 Đề bài</h2>
+    <div class="question">
+      <p><strong>Câu 1:</strong> What time does the train arrive?</p>
+      <ul>
+        <li>10:15</li>
+        <li>10:30</li>
+        <li>10:45</li>
+      </ul>
+    </div>
+    <div class="question">
+      <p><strong>Câu 2:</strong> Look at the picture and choose the correct answer:</p>
+      <img src="https://raw.githubusercontent.com/daivu2001/de-thi-tieng-anh/main/Question%203%20-1ALL_002.jpg" width="400">
+    </div>
   </div>
 
-  <!-- Google Form bên phải -->
-  <div class="right-frame">
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdFbCD9bBaRB_tIL0qc_uqQyRauGAqoB8xTmmanAXCb8sACHQ/viewform?embedded=true"
-            title="Google Form">
-    </iframe>
+  <!-- Bên phải: phần trả lời -->
+  <div class="right">
+    <h2>✅ Trả lời</h2>
+
+    <div class="answer">
+      <p><strong>Câu 1:</strong></p>
+      <label><input type="radio" name="q1"> A. 10:15</label><br>
+      <label><input type="radio" name="q1"> B. 10:30</label><br>
+      <label><input type="radio" name="q1"> C. 10:45</label>
+    </div>
+
+    <div class="answer">
+      <p><strong>Câu 2:</strong></p>
+      <label><input type="radio" name="q2"> A</label><br>
+      <label><input type="radio" name="q2"> B</label><br>
+      <label><input type="radio" name="q2"> C</label>
+    </div>
   </div>
 </div>
 
-<footer>
-  Thiết kế: Phạm Văn Thủy
-</footer>
-
 </body>
 </html>
+
 
 
