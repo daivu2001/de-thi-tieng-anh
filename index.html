@@ -4,66 +4,65 @@
   <meta charset="UTF-8">
   <title>Đề kiểm tra nghe tiếng Anh – Lớp 11</title>
   <style>
-    body { font-family: Arial; padding: 20px; line-height: 1.6; }
-    h2 { color: #2c3e50; }
-    button { margin: 5px; padding: 8px 12px; }
-    audio { margin: 10px 0; }
-    hr { margin: 25px 0; }
+    body {
+      font-family: Arial;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    h2 {
+      color: #2c3e50;
+    }
+    button {
+      margin: 5px;
+      padding: 8px 12px;
+      cursor: pointer;
+    }
+    hr {
+      margin: 25px 0;
+    }
   </style>
+</head>
+<body>
+
+  <h2>📑 Đề kiểm tra nghe tiếng Anh – Lớp 11</h2>
+
+  <p><strong>Câu 1:</strong> Listen and choose the correct answer:
+    <button onclick="playAudio('audio1')">🔊 Nghe Câu 1</button>
+  </p>
+  <p><strong>Câu 2:</strong> Listen and choose the correct answer:
+    <button onclick="playAudio('audio2')">🔊 Nghe Câu 2</button>
+  </p>
+  <p><strong>Câu 3:</strong> Listen and choose the correct answer:
+    <button onclick="playAudio('audio3')">🔊 Nghe Câu 3</button>
+  </p>
+  <p><strong>Câu 4:</strong> Listen and choose the correct answer:
+    <button onclick="playAudio('audio4')">🔊 Nghe Câu 4</button>
+  </p>
+  <p><strong>Câu 5:</strong> Listen and choose the correct answer:
+    <button onclick="playAudio('audio5')">🔊 Nghe Câu 5</button>
+  </p>
+
+  <hr>
+
+  <p>📥 <strong>Nộp bài tại đây:</strong></p>
+  <a href="https://your-google-form-link.com" target="_blank">👉 MỞ FORM NỘP BÀI</a>
+
+  <!-- Audio elements -->
+  <audio id="audio1" src="Part1.mp3"></audio>
+  <audio id="audio2" src="Part2.mp3"></audio>
+  <audio id="audio3" src="Part3.mp3"></audio>
+  <audio id="audio4" src="Part4.mp3"></audio>
+  <audio id="audio5" src="Part5.mp3"></audio>
+
   <script>
     function playAudio(id) {
+      // Dừng tất cả audio trước khi phát cái mới
       document.querySelectorAll('audio').forEach(a => a.pause());
       const audio = document.getElementById(id);
       audio.currentTime = 0;
       audio.play();
     }
   </script>
-</head>
-<body>
-
-  <h2>📝 Đề kiểm tra nghe tiếng Anh – Lớp 11</h2>
-
-  <p><strong>Câu 1:</strong> Listen and choose the correct answer:
-    <button onclick="playAudio('audio1')">🔊 Nghe Câu 1</button>
-  </p>
-  <audio id="audio1">
-    <source src="https://docs.google.com/uc?export=open&id=1DT9C8pOXLiCOcrF4t_oomHfT0G5MftcW" type="audio/mpeg">
-  </audio>
-
-  <p><strong>Câu 2:</strong> Listen and choose the correct answer:
-    <button onclick="playAudio('audio2')">🔊 Nghe Câu 2</button>
-  </p>
-  <audio id="audio2">
-    <source src="https://docs.google.com/uc?export=open&id=1gbI2JsSNyzWGAArya6289vxRpBTKotOG" type="audio/mpeg">
-  </audio>
-
-  <p><strong>Câu 3:</strong> Listen and choose the correct answer:
-    <button onclick="playAudio('audio3')">🔊 Nghe Câu 3</button>
-  </p>
-  <audio id="audio3">
-    <source src="https://docs.google.com/uc?export=open&id=1pTuoRHUuUSZ3BhcgDK7chsZ3_kxYVLUt" type="audio/mpeg">
-  </audio>
-
-  <p><strong>Câu 4:</strong> Listen and choose the correct answer:
-    <button onclick="playAudio('audio4')">🔊 Nghe Câu 4</button>
-  </p>
-  <audio id="audio4">
-    <source src="https://docs.google.com/uc?export=open&id=1HR-uhc_UM9AbxBhx2kmsxyb3_LpGEbtG" type="audio/mpeg">
-  </audio>
-
-  <p><strong>Câu 5:</strong> Listen and choose the correct answer:
-    <button onclick="playAudio('audio5')">🔊 Nghe Câu 5</button>
-  </p>
-  <audio id="audio5">
-    <source src="https://docs.google.com/uc?export=open&id=1xWzVlyHyrwK6ilOwVtxmhhnw12YDhPph" type="audio/mpeg">
-  </audio>
-
-  <hr>
-
-  <h3>📩 Nộp bài tại đây:</h3>
-  <a href="https://forms.gle/YOUR_FORM_LINK" target="_blank">👉 MỞ FORM NỘP BÀI</a>
 
 </body>
 </html>
-
-
