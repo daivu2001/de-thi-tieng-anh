@@ -2,31 +2,30 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <title>Bài tập trắc nghiệm A2 KEY</title>
+  <title>Đề thi A2 Key</title>
   <style>
     html, body {
       margin: 0;
       padding: 0;
-      height: 100%;
+      height: 100vh;
       overflow: hidden;
       font-family: Arial, sans-serif;
     }
 
     .container {
       display: flex;
-      height: 100vh;
-      width: 100vw;
+      height: 100%;
     }
 
     .left, .right {
-      overflow-y: auto;
       height: 100%;
+      overflow-y: auto;
       padding: 20px;
     }
 
     .left {
       flex: 2;
-      background-color: #fefefe;
+      background-color: #fff;
       border-right: 1px solid #ccc;
     }
 
@@ -35,62 +34,52 @@
       background-color: #f9f9f9;
     }
 
+    .left img {
+      max-width: 100%;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+    }
+
     h2 {
-      margin-bottom: 10px;
-      color: #333;
-    }
-
-    .question {
-      margin-bottom: 20px;
-    }
-
-    .answer input {
-      margin-right: 5px;
+      margin-top: 0;
     }
   </style>
 </head>
 <body>
-
-<div class="container">
-  <!-- Bên trái: đề bài -->
-  <div class="left">
-    <h2>📝 Đề bài</h2>
-    <div class="question">
-      <p><strong>Câu 1:</strong> What time does the train arrive?</p>
-      <ul>
-        <li>10:15</li>
-        <li>10:30</li>
-        <li>10:45</li>
-      </ul>
-    </div>
-    <div class="question">
-      <p><strong>Câu 2:</strong> Look at the picture and choose the correct answer:</p>
-      <img src="https://raw.githubusercontent.com/daivu2001/de-thi-tieng-anh/main/Question%203%20-1ALL_002.jpg" width="400">
-    </div>
-  </div>
-
-  <!-- Bên phải: phần trả lời -->
-  <div class="right">
-    <h2>✅ Trả lời</h2>
-
-    <div class="answer">
-      <p><strong>Câu 1:</strong></p>
-      <label><input type="radio" name="q1"> A. 10:15</label><br>
-      <label><input type="radio" name="q1"> B. 10:30</label><br>
-      <label><input type="radio" name="q1"> C. 10:45</label>
+  <div class="container">
+    <!-- Bên trái: hiển thị 14 ảnh đề bài -->
+    <div class="left">
+      <h2>📄 Đề bài</h2>
+      <!-- Chèn 14 ảnh từ GitHub -->
+      <img src="https://raw.githubusercontent.com/daivu2001/de-thi-tieng-anh/main/Question%203%20-1ALL_001.jpg" alt="page 1">
+      <img src="https://raw.githubusercontent.com/daivu2001/de-thi-tieng-anh/main/Question%203%20-1ALL_002.jpg" alt="page 2">
+      <img src="https://raw.githubusercontent.com/daivu2001/de-thi-tieng-anh/main/Question%203%20-1ALL_003.jpg" alt="page 3">
+      <img src="https://raw.githubusercontent.com/daivu2001/de-thi-tieng-anh/main/Question%203%20-1ALL_004.jpg" alt="page 4">
+      <img src="https://raw.githubusercontent.com/daivu2001/de-thi-tieng-anh/main/Question%203%20-1ALL_005.jpg" alt="page 5">
+      <img src="https://raw.githubusercontent.com/daivu2001/de-thi-tieng-anh/main/Question%203%20-1ALL_006.jpg" alt="page 6">
+      <img src="https://raw.githubusercontent.com/daivu2001/de-thi-tieng-anh/main/Question%203%20-1ALL_007.jpg" alt="page 7">
+      <img src="https://raw.githubusercontent.com/daivu2001/de-thi-tieng-anh/main/Question%203%20-1ALL_008.jpg" alt="page 8">
+      <img src="https://raw.githubusercontent.com/daivu2001/de-thi-tieng-anh/main/Question%203%20-1ALL_009.jpg" alt="page 9">
+      <img src="https://raw.githubusercontent.com/daivu2001/de-thi-tieng-anh/main/Question%203%20-1ALL_010.jpg" alt="page 10">
+      <img src="https://raw.githubusercontent.com/daivu2001/de-thi-tieng-anh/main/Question%203%20-1ALL_011.jpg" alt="page 11">
+      <img src="https://raw.githubusercontent.com/daivu2001/de-thi-tieng-anh/main/Question%203%20-1ALL_012.jpg" alt="page 12">
+      <img src="https://raw.githubusercontent.com/daivu2001/de-thi-tieng-anh/main/Question%203%20-1ALL_013.jpg" alt="page 13">
+      <img src="https://raw.githubusercontent.com/daivu2001/de-thi-tieng-anh/main/Question%203%20-1ALL_014.jpg" alt="page 14">
     </div>
 
-    <div class="answer">
-      <p><strong>Câu 2:</strong></p>
-      <label><input type="radio" name="q2"> A</label><br>
-      <label><input type="radio" name="q2"> B</label><br>
-      <label><input type="radio" name="q2"> C</label>
+    <!-- Bên phải: Google Form -->
+    <div class="right">
+      <h2>✅ Trả lời</h2>
+      <iframe 
+        src="https://docs.google.com/forms/d/e/1FAIpQLSdFbCD9bBaRB_tIL0qc_uqQyRauGAqoB8xTmmanAXCb8sACHQ/viewform?embedded=true" 
+        width="100%" 
+        height="2000" 
+        frameborder="0" 
+        marginheight="0" 
+        marginwidth="0">
+        Đang tải biểu mẫu…
+      </iframe>
     </div>
   </div>
-</div>
-
 </body>
 </html>
-
-
-
